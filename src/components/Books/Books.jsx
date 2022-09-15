@@ -1,9 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react';
+import ListBooks from '../ListBooks/ListBooks';
+import './Books.scss';
+import FormAdding from '../FormAdding/FormAdding';
 
 const Books = () => {
-  return (
-    <div>Books</div>
-  )
-}
+  const [books] = useState([{ id: '0', title: 'LaBiblia', author: 'Federico' }, { id: '1', title: 'ViajeAlCentro', author: 'Luis' }]);
 
-export default Books
+  const sendBooks = books.map((obj) => (
+    <ListBooks title={obj.title} author={obj.author} id={obj.id} key={obj.id} />
+  ));
+
+  return (
+    <section className="Father-Books">
+      <h1 className="BookPage-title">Pagina 1 Books</h1>
+      <article className="container-UlBooks">
+        <ul className="Ul-books">
+          {sendBooks}
+        </ul>
+      </article>
+      <FormAdding />
+    </section>
+  );
+};
+
+export default Books;

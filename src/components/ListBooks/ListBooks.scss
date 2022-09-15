@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.MainContainerBook {
+  border: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+
+  .HeaderBook-Container{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+
+    .InfoBook-Container {
+      width: 60%;
+
+      .Buttons-info {
+        display: flex;
+        justify-content: space-evenly;
+        width: 50%;
+        height: 20px;
+
+        Button {
+          border: none;
+          background: transparent;
+          color: blue;
+          padding: 2px;
+        }
+
+        Button:hover {
+          color: rgb(82, 82, 227);
+          border-bottom: 1px solid blue;
+        }
+
+        Button:hover {
+          
+        }
+
+        hr {
+          border: none;
+          background-color: black;
+          width: 0.1px;
+          height: 30%;
+          align-self: center;
+        }
+      }
+    }
+
+    .Graphic-Container {
+      border: 1px solid #000;
+      width: 40%;
+    }
+  }
+
+  .hr-line {
+    border: none;
+    background-color: black;
+    width: 1px;
+    height: 80%;
+    align-self: center;
+  }
+
+  .Update-Container {
+    border: 1px solid #000;
+    width: 25%;
+
+    .current-title {
+      font-weight: 800;
+    }
+  }
+}
+

@@ -1,23 +1,18 @@
 import './App.css';
-import React from 'react';
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Books from '../Books/Books';
 import Categories from '../Categories/Categories';
+import Navbar from '../Navbar/Navbar';
 
-function App() {
-  // eslint-disable-next-line react/jsx-filename-extension
+const App = () => (
   <BrowserRouter>
-    {/* {<NavBar />} */}
+    <Navbar />
     <Routes>
       <Route path="/" element={<Books />} />
       <Route path="/Books" element={<Books />} />
       <Route path="/Categories" element={<Categories />} />
     </Routes>
-  </BrowserRouter>;
-}
+  </BrowserRouter>
+);
 
 export default App;
