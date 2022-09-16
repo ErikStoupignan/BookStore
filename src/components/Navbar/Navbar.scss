@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+}
+
+.NavBarContainer {
+  background-color: rgba(1, 130, 181, 0.108);
+  box-shadow: 2px 0 0 rgba(1, 130, 181, 0.108);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+  .LinksContainer {
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 20%;
+
+    .bookLink {
+      padding: 5px 20px;
+      border-radius: 30px;
+      background-color: rgba(170, 170, 170, 0.099);
+    }
+
+    .bookLink:active {
+      transform: scale(0.9);
+      background-color: rgba(170, 170, 170, 0.353);
+      color: black;
+    }
+    
+    .CategoriesLink {
+      padding: 5px 20px;
+      border-radius: 30px;
+      background-color: rgba(170, 170, 170, 0.099);
+    }
+
+    .CategoriesLink:active {
+      transform: scale(0.9);
+      background-color: rgba(170, 170, 170, 0.353);
+      color: black;
+    }
+
+  }
+}
