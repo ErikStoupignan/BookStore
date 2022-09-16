@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Father-Books {
+  .BookPage-title {
+    padding: 20px;
+  }
+
+  .container-UlBooks {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 15px 0;
+
+    .Ul-books {
+      width: 80%;
+    }
+  }
+
+  .Container-FormAdding {
+    display: flex;
+  }
+}
