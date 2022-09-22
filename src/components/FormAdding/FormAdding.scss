@@ -2,6 +2,9 @@
   margin: 0;
 }
 
+// Variables
+$letter-colors: #0290FF;
+
 .form-section {
   width: 100%;
 
@@ -13,20 +16,54 @@
     gap: 35px;
     padding: 10px;
 
-    .Input-title {
+    input {
       width: 20%;
+      height: 40px;
+      font-size: 20px;
+      padding: 0 0 0 10px;
+      background:$letter-colors;
+      border: none;
+      color: white;
+      border-radius: 30px;
+    }
+
+    ::placeholder {
+      color: white;
+    }
+
+    .Input-title {
+      outline: none;
     }
 
     .Input-Author {
-      width: 20%;
+      outline: none;
     }
 
     .CategorysMenu {
-      width: 10%;
+      width: 20%;
+      height: 40px;
+      font-size: 20px;
+      background:$letter-colors;
+      color: white;
+      border-radius: 30px;
+
+      .option_default {
+        text-align: center;
+      }
     }
 
     .addBooksBtn {
-      width: 15%;
+      width: 20%;
+      height: 40px;
+      font-size: 20px;
+      background:$letter-colors;
+      color: white;
+      border: none;
+      border-radius: 30px;
+    }
+
+    .addBooksBtn:hover {
+      transform: scale(0.95);
     }
   }
 }

@@ -32,7 +32,7 @@ const FormAdding = () => {
         <input className="Input-title" type="text" value={title} placeholder="Book title" onChange={(e) => setTitle(e.target.value)} />
         <input className="Input-Author" type="text" value={author} placeholder="Author" onChange={(e) => setAuthor(e.target.value)} />
         <select value={category} className="CategorysMenu" onChange={(e) => setCategory(e.target.value)}>
-          <option disabled value="DEFAULT"> -- select an option -- </option>
+          <option className="option_default" disabled value="DEFAULT"> -- Select an Option -- </option>
           <option value="Fiction">Fiction</option>
           <option value="Drama">Drama</option>
           <option value="Comedy">Comedy</option>
