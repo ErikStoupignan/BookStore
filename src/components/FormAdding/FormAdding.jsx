@@ -2,7 +2,7 @@ import './FormAdding.scss';
 import { useDispatch } from 'react-redux';
 import React, { useState } from 'react';
 import { nanoid } from '@reduxjs/toolkit';
-import { addBooks } from '../../redux/books/books';
+import { addBookNew } from '../../redux/books/Api';
 
 const FormAdding = () => {
   // Local state
@@ -13,7 +13,14 @@ const FormAdding = () => {
 
   const handleAdd = () => {
     if (title === '' || author === '' || category === 'DEFAULT') return;
-    dispatch(addBooks(title, author, category, nanoid()));
+    const idGenerate = nanoid();
+    const newBook = {
+      title,
+      author,
+      category,
+      idGenerate,
+    };
+    dispatch(addBookNew(newBook));
     setTitle('');
     setAuthor('');
     setCategory('DEFAULT');
