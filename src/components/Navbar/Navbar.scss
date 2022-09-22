@@ -7,16 +7,19 @@ $letter-colors: #0290FF;
 $letter-width: 200;
 $Link-decoration: none;
 $link-text-shadow: 1px 1px 0 black;
-$Font-size-links: 30px;
+$Font-size-links: 0.813rem;
+$links_color_active: #121212;
+$links_color_normal: black;
+$lettler_spacing: 3.9px;
+
 
 .NavBarContainer {
   background-color: rgba(252, 249, 249, 0.265);
-  box-shadow: 0px 0px 10px 4px rgb(0, 0, 0);
-  border-radius: 0 0 9rem 9rem;
+  border-bottom: 3px solid rgba(128, 128, 128, 0.341);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
+  height: 72px;
   width: 100%;
   z-index: 999;
 
@@ -29,7 +32,7 @@ $Font-size-links: 30px;
     padding: 0 100px 0 100px;
 
     .titleNavBar {
-      font-size: 40px;
+      font-size: 1.875rem;
       font-weight: 700;
       color: $letter-colors;
     }
@@ -37,7 +40,7 @@ $Font-size-links: 30px;
     .LinksContainer {
       display: flex;
       flex-wrap: wrap;
-      width: 350px;
+      width: 290px;
       justify-content: center;
       justify-content: space-between;
 
@@ -47,8 +50,8 @@ $Font-size-links: 30px;
         font-size: $Font-size-links;
         font-weight: $letter-width;
         text-decoration: $Link-decoration;
-        color: $letter-colors;
-        text-shadow: $link-text-shadow;
+        color: rgba(0, 0, 0, 0.8);
+        letter-spacing: $lettler_spacing;
       }
 
       .Links_Navbar:hover {
@@ -65,10 +68,20 @@ $Font-size-links: 30px;
   } 
 
   .IconNavBar {
-    font-size: 50px;
+    font-size: 25px;
     margin-right: 10%;
     cursor: pointer;
-    
+    color: $letter-colors;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .Icon_user {
+    border: 1px solid #0000006c;
+    border-radius: 50%;
+    padding: 8px;
   }
 
 }
