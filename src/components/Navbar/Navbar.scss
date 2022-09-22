@@ -2,42 +2,73 @@
   margin: 0;
 }
 
+// Variables for the links
+$letter-colors: #0290FF;
+$letter-width: 200;
+$Link-decoration: none;
+$link-text-shadow: 1px 1px 0 black;
+$Font-size-links: 30px;
+
 .NavBarContainer {
-  background-color: rgba(1, 130, 181, 0.108);
-  box-shadow: 2px 0 0 rgba(1, 130, 181, 0.108);
+  background-color: rgba(252, 249, 249, 0.265);
+  box-shadow: 0px 0px 10px 4px rgb(0, 0, 0);
+  border-radius: 0 0 9rem 9rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  height: 100px;
+  width: 100%;
+  z-index: 999;
 
-  .LinksContainer {
-    width: 45%;
+  .Container_titleNavBar_Links {
+    height: 100%;
+    width: 40%;
     display: flex;
-    justify-content: space-evenly;
-    margin-right: 20%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px 0 100px;
 
-    .bookLink {
-      padding: 5px 20px;
-      border-radius: 30px;
-      background-color: rgba(170, 170, 170, 0.099);
+    .titleNavBar {
+      font-size: 40px;
+      font-weight: 700;
+      color: $letter-colors;
     }
 
-    .bookLink:active {
-      transform: scale(0.9);
-      background-color: rgba(170, 170, 170, 0.353);
-      color: black;
-    }
+    .LinksContainer {
+      display: flex;
+      flex-wrap: wrap;
+      width: 350px;
+      justify-content: center;
+      justify-content: space-between;
 
-    .CategoriesLink {
-      padding: 5px 20px;
-      border-radius: 30px;
-      background-color: rgba(170, 170, 170, 0.099);
-    }
+      .Links_Navbar {
+        padding: 5px 20px;
+        border-radius: 30px;
+        font-size: $Font-size-links;
+        font-weight: $letter-width;
+        text-decoration: $Link-decoration;
+        color: $letter-colors;
+        text-shadow: $link-text-shadow;
+      }
 
-    .CategoriesLink:active {
-      transform: scale(0.9);
-      background-color: rgba(170, 170, 170, 0.353);
-      color: black;
+      .Links_Navbar:hover {
+        text-decoration: underline;
+        text-shadow: 0 0 10px rgb(69, 103, 213);
+        color: rgb(46, 30, 30);
+      }
+
+      .Links_Navbar:active {
+        transform: scale(0.9);
+        color: rgb(16, 16, 16);
+      }
     }
+  } 
+
+  .IconNavBar {
+    font-size: 50px;
+    margin-right: 10%;
+    cursor: pointer;
+    
   }
+
 }
