@@ -20,7 +20,7 @@ const addBookNew = createAsyncThunk(
     await fetch(apiUrl, {
       method: 'POST',
       body: JSON.stringify({
-        item_id: `${newBook.idGenerate}`,
+        item_id: `${newBook.id}`,
         title: `${newBook.title}`,
         author: `${newBook.author}`,
         category: `${newBook.category}`,
