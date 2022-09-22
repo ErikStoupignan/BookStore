@@ -3,7 +3,13 @@
 }
 
 // Variables
-$letter-colors: #0290FF;
+$letter-colors: fff;
+$blue_template: #0290FF;
+$letter_gray_inputs: rgb(133, 133, 133);
+$color_border_inputs: 1px solid rgb(179, 178, 178);
+$border_radius_inputs: 5px;
+
+
 
 .form-section {
   width: 100%;
@@ -20,15 +26,15 @@ $letter-colors: #0290FF;
       width: 20%;
       height: 40px;
       font-size: 20px;
-      padding: 0 0 0 10px;
-      background:$letter-colors;
-      border: none;
-      color: white;
-      border-radius: 30px;
+      padding: 0 8px 0 15px;
+      background: #fff;
+      border: $color_border_inputs;
+      color: rgb(152, 152, 152);
+      border-radius: $border_radius_inputs;
     }
 
     ::placeholder {
-      color: white;
+      color: rgba(118, 118, 118, 0.573);
     }
 
     .Input-title {
@@ -43,27 +49,31 @@ $letter-colors: #0290FF;
       width: 20%;
       height: 40px;
       font-size: 20px;
-      background:$letter-colors;
-      color: white;
-      border-radius: 30px;
+      background: #fff;
+      color: $letter_gray_inputs;
+      border: $color_border_inputs;
+      border-radius: $border_radius_inputs;
+
 
       .option_default {
-        text-align: center;
+        text-align: left;
       }
     }
 
     .addBooksBtn {
       width: 20%;
       height: 40px;
-      font-size: 20px;
-      background:$letter-colors;
+      font-size: 10px;
+      background: $blue_template;
       color: white;
       border: none;
-      border-radius: 30px;
+      border-radius: $border_radius_inputs;
     }
 
-    .addBooksBtn:hover {
-      transform: scale(0.95);
+    .addBooksBtn:active {
+      transform: scale(0.99);
+      background-color: rgb(90, 89, 89);
+      color: rgb(200, 200, 200);
     }
   }
 }

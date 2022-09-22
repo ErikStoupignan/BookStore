@@ -32,7 +32,7 @@ const Books = () => {
         </ul>
       </article>
       <article className="Container-FormAdding">
-        <h1 className="BookPage-title">Books</h1>
+        <h1 className="BookPage-title">ADD NEW BOOK</h1>
         <FormAdding />
       </article>
     </section>
