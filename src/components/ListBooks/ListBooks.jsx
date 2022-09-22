@@ -2,7 +2,6 @@ import React from 'react';
 import './ListBooks.scss';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-// import { removeBooks } from '../../redux/books/books';
 import { deleteBook } from '../../redux/books/Api';
 
 const ListBooks = (props) => {
