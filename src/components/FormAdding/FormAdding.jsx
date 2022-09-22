@@ -13,12 +13,12 @@ const FormAdding = () => {
 
   const handleAdd = () => {
     if (title === '' || author === '' || category === 'DEFAULT') return;
-    const idGenerate = nanoid();
+    const id = nanoid();
     const newBook = {
       title,
       author,
       category,
-      idGenerate,
+      id,
     };
     dispatch(addBookNew(newBook));
     setTitle('');

@@ -1,5 +1,5 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { ADD_BOOK, LOAD_API_BOOK } from './books';
+import { ADD_BOOK, LOAD_API_BOOK, REMOVE_BOOK } from './books';
 
 const uniqueId = 'NUnOw1VUF2c8wd4VEMTv';
 const apiUrl = `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/${uniqueId}/books/`;
@@ -31,4 +31,12 @@ const addBookNew = createAsyncThunk(
   },
 );
 
-export { getBooks, addBookNew };
+const deleteBook = createAsyncThunk(
+  REMOVE_BOOK,
+  async (id) => {
+    await fetch(`${apiUrl}${id}`, { method: 'DELETE' });
+    return id;
+  },
+);
+
+export { getBooks, addBookNew, deleteBook };

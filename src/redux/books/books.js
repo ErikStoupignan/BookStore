@@ -13,8 +13,8 @@ const reduce = (state = initialState, actions) => {
         actions.payload,
       ];
 
-    case REMOVE_BOOK:
-      return state.filter((item) => item.id !== actions.id);
+    case REMOVE_BOOK + '/fulfilled':
+      return state.filter((item) => item.id !== actions.payload);
 
     case LOAD_API_BOOK + '/fulfilled':
       return [
