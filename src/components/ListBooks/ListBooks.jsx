@@ -20,7 +20,7 @@ const ListBooks = (props) => {
         <div className="InfoBook-Container">
 
           <p className="Categories">{category}</p>
-          <h3>{title}</h3>
+          <h3 className="Name_Book_title">{title}</h3>
           <p className="Author">{author}</p>
 
           <article className="Buttons-info">
@@ -42,8 +42,8 @@ const ListBooks = (props) => {
           </div>
 
           <div className="Data-Graphic-Container">
-            <p>75%</p>
-            <p>Completed</p>
+            <p className="percentage">75%</p>
+            <p className="percentage_status_completed">Completed</p>
           </div>
 
         </div>

@@ -2,6 +2,13 @@
   margin: 0;
 }
 
+// Variables
+$letter-colors: fff;
+$blue_template: #0290ff;
+$letter_gray_inputs: rgb(133, 133, 133);
+$color_border_inputs: 1px solid rgb(179, 178, 178);
+$border_radius_inputs: 5px;
+
 .form-section {
   width: 100%;
 
@@ -13,20 +20,57 @@
     gap: 35px;
     padding: 10px;
 
-    .Input-title {
+    input {
       width: 20%;
+      height: 40px;
+      font-size: 15px;
+      padding: 0 8px 0 15px;
+      background: #fff;
+      border: $color_border_inputs;
+      color: rgb(152, 152, 152);
+      border-radius: $border_radius_inputs;
+    }
+
+    ::placeholder {
+      color: rgba(118, 118, 118, 0.573);
+    }
+
+    .Input-title {
+      outline: none;
     }
 
     .Input-Author {
-      width: 20%;
+      outline: none;
     }
 
     .CategorysMenu {
-      width: 10%;
+      width: 20%;
+      height: 40px;
+      font-size: 15px;
+      background: #fff;
+      color: $letter_gray_inputs;
+      border: $color_border_inputs;
+      border-radius: $border_radius_inputs;
+
+      .option_default {
+        text-align: left;
+      }
     }
 
     .addBooksBtn {
-      width: 15%;
+      width: 20%;
+      height: 40px;
+      font-size: 10px;
+      background: $blue_template;
+      color: white;
+      border: none;
+      border-radius: $border_radius_inputs;
+    }
+
+    .addBooksBtn:active {
+      transform: scale(0.99);
+      background-color: rgb(90, 89, 89);
+      color: rgb(200, 200, 200);
     }
   }
 }

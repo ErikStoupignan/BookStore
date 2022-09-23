@@ -4,22 +4,31 @@
 }
 
 .Father-Books {
-  .BookPage-title {
-    padding: 20px;
-  }
-
   .container-UlBooks {
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: center;
-    margin: 0 0 15px 0;
+    margin: 40px auto 40px auto;
 
     .Ul-books {
-      width: 80%;
+      width: 100%;
     }
   }
 
   .Container-FormAdding {
     display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+
+    .BookPage-title {
+      padding: 15px 0 5px 30px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      color: rgba(0, 0, 0, 0.398);
+      letter-spacing: 1.9px;
+      font-weight: bold;
+      border-top: 1px solid rgba(0, 0, 0, 0.117);
+    }
   }
 }
