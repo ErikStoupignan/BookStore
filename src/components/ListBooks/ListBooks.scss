@@ -5,7 +5,7 @@
 
 // Variables
 $letter-colors: fff;
-$blue_template: #0290FF;
+$blue_template: #0290ff;
 $letter_gray_inputs: rgb(133, 133, 133);
 $color_border_inputs: 1px solid rgb(179, 178, 178);
 $border_radius_inputs: 5px;
@@ -48,7 +48,7 @@ $border_radius_inputs: 5px;
       .Author {
         font-weight: 400;
         color: #0291ffcd;
-         font-size: 14px;
+        font-size: 14px;
       }
 
       .Buttons-info {
@@ -85,14 +85,14 @@ $border_radius_inputs: 5px;
       display: flex;
 
       .Graphic {
-        width: 49%;
+        width: 39%;
         display: flex;
         justify-content: center;
         align-items: center;
 
         .circular-progress-container {
-          width: 40px;
-          height: 40px;
+          width: 30px;
+          height: 30px;
           padding: 0.63rem 0.625rem 0.75rem 0.75rem;
           display: flex;
           justify-content: center;
@@ -101,7 +101,7 @@ $border_radius_inputs: 5px;
 
           .circular-progress {
             position: absolute;
-            border: solid 5px #307bbe;
+            border: solid 5px $blue_template;
             border-left-color: #e8e8e8;
             border-radius: 50%;
             width: 100%;
@@ -118,8 +118,17 @@ $border_radius_inputs: 5px;
         flex-direction: column;
         width: 49%;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         font-size: 18px;
+
+        .percentage {
+          font-size: 24px;
+        }
+
+        .percentage_status_completed {
+          font-size: 13px;
+          color: rgb(122, 120, 120);
+        }
       }
     }
   }
