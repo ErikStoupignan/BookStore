@@ -96,7 +96,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 - GitHub: [@ErikStoupignan](https://github.com/ErikStoupignan)
 - Twitter: [@Erik_Stoupignan](https://twitter.com/Erik_Stoupignan)
-- LinkedIn: [Erik Stoupignan Sánchez Beltrán](https://www.linkedin.com/in/erik-s%C3%A1nchez-beltr%C3%A1n-393180238/)
+- LinkedIn: [Erik Stoupignan Sánchez Beltrán](https://www.linkedin.com/in/erik-sanchez-beltran/)
 
 ## License
 <a href="MIT.md">License MIT.md</a>
