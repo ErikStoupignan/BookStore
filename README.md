@@ -2,6 +2,13 @@
 
 # BookStore
 
+## Screenshots
+### Books page
+![image](https://user-images.githubusercontent.com/106561762/193140498-c2da1f92-e108-4635-a0f2-1fc70e48ca93.png)
+
+### Categories page
+https://bookstore-essb.netlify.app/
+
 ## Built With
 
 - SCSS
@@ -11,7 +18,7 @@
 
 ## Live Demo
 
-<a href="#">Not available at the moment</a> 
+<a href="https://bookstore-essb.netlify.app/">Live Demo Here!</a> 
 
 ## Getting Started
 
