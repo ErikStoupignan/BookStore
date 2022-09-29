@@ -9,8 +9,10 @@ const Books = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(getBooks());
-  }, []);
+    if (!getBooks.length) {
+      dispatch(getBooks());
+    }
+  });
 
   const books = useSelector((state) => state.books);
 
