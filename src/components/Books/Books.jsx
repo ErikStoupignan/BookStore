@@ -10,6 +10,7 @@ const Books = () => {
 
   useEffect(() => {
     dispatch(getBooks());
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const books = useSelector((state) => state.books);
