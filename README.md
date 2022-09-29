@@ -7,7 +7,8 @@
 ![image](https://user-images.githubusercontent.com/106561762/193140498-c2da1f92-e108-4635-a0f2-1fc70e48ca93.png)
 
 ### Categories page
-https://bookstore-essb.netlify.app/
+![image](https://user-images.githubusercontent.com/106561762/193140859-271f8d5b-17bb-482a-a0bf-d2164420d3a4.png)
+
 
 ## Built With
 
